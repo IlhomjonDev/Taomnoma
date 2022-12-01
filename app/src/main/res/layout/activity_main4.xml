@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity4">
+
+         <TextView
+        android:id="@+id/taom_nomi"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center"
+        android:text="Taom"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintBottom_toTopOf="@id/kerakli_maxsulot"
+        android:textSize="@dimen/_30ssp"/>
+        <TextView
+        android:id="@+id/kerakli_maxsulot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Kerakli maxsulotlar"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taom_nomi"
+            app:layout_constraintBottom_toTopOf="@id/retsept"
+        android:textSize="@dimen/_20ssp"/>
+        <TextView
+        android:id="@+id/retsept"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="left"
+        android:text="...products"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kerakli_maxsulot"
+            app:layout_constraintBottom_toTopOf="@id/taom_tayyorlash_tartibi"
+        android:textSize="@dimen/_20ssp"/>
+        <TextView
+        android:id="@+id/taom_tayyorlash_tartibi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Taom tayyorlash tartibi"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/retsept"
+            app:layout_constraintBottom_toTopOf="@id/instruksiya"
+        android:textSize="@dimen/_20ssp"/>
+        <TextView
+        android:id="@+id/instruksiya"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="left"
+        android:text="...ovqatni pishirish"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taom_tayyorlash_tartibi"
+            app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/_15ssp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
